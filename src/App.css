@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #047ef8 0%,  #ffffff 100%);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  padding: 40px 30px;
+  background-color: white;
+  color: #333;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.App:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.App-header {
+  background-color: #ff758c;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.app-name
+{
+  margin-top: 10px;
+}
+
+h1.app-name {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+input.city-search {
+  padding: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+input.city-search:focus {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#xx {
+  background-color: #bfdef7;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+#xx h2 {
+  color: #1e0a61;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#xx span {
+  display: block;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#xx img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+#xx p {
+  font-size: 20px;
+  color: #333;
+  margin: 10px 0;
+}
+
+#xx p:first-of-type {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#xx p:last-of-type {
+  color: #555;
+  font-size: 18px;
+}
+
+#xx:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+/* Styling for search button */
+#SearchCity {
+  background-color: #007bff; /* A nice blue color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#SearchCity:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+#SearchCity:active {
+  background-color: #003f7f; /* Even darker blue when pressed */
+  box-shadow: none; /* Remove shadow on click */
+}
+
+
+.forecast {
+  margin-top: 40px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.forecast-item {
+  background: linear-gradient(135deg, #047ef8 0%,#cbe5ff 50%,  #ffffff 100%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(20% - 20px);
+}
+.forecast-item:hover
+{
+  background: linear-gradient(135deg, #ffffff 0%,#cbe5ff 50%,  #047ef8 100%);
+  /* background: linear-gradient(135deg, #ffffff 0%,#f4cc9f 50%,  #f88604 100%); */
+}
+.weather-info {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.weather-info img {
+  margin: 20px 0;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info p {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #555;
+}
+#AddCity
+{
+  width:200px;
+  background-color:   #1e0a61;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+#AddCity:hover
+{
+  padding: 12px;
+  box-shadow: 0 10px 20px rgb(150, 155, 212);
+}
+.favorites {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.favorites h3 {
+  color: #1e0a61;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.favorites ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favorites li {
+  margin: 10px;
+}
+
+.favorites button {
+  background-color: #1e0a61;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.favorites button:hover {
+  background-color: #301f78;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.favorites button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(30, 10, 97, 0.3);
+}
